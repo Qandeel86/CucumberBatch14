@@ -1,5 +1,5 @@
 Feature: Login functionality
-
+@sprint1 @regression
   Scenario: Valid admin login
     Given user is navigated to HRMS application
     When user enters valid username and valid password
