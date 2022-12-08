@@ -1,5 +1,5 @@
 Feature: Add Employee
-  @sprint3 @regression
+  @sprint1 @regression
   Scenario: Adding one employee
     Given user is navigated to HRMS application
     When user enters valid username and valid password
