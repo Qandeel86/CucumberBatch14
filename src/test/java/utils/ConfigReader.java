@@ -15,7 +15,8 @@ public class ConfigReader {
             prop = new Properties();
             prop.load(fis);
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+            //throw new RuntimeException(e);
         } catch (IOException e) {
             e.printStackTrace();
         }
