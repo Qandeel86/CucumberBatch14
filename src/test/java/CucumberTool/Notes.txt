@@ -150,3 +150,17 @@ Scenario - Data table - hooks and background execute just one time
 Working with excel
 .xls - HSSF
 .xlsx - XSSF
+
+Class 7 -
+   Recap - parameters passing for adding the employee
+   -- earlier approach was - hardcoded data
+   -- passing one set of data from feature file
+   -- scenario outline - examples table (for passing multiple data sets)
+   -- data table - hooks, background execute one time for multiple data sets
+   -- excel - to pass large volume of data
+
+cucumber accepts array of byte for screenshots
+when we generate any report, this should be under target folder
+
+how to open the report -
+right click - open in - browser - chrome
