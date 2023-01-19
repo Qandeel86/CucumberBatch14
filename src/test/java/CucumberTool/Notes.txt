@@ -164,3 +164,58 @@ when we generate any report, this should be under target folder
 
 how to open the report -
 right click - open in - browser - chrome
+
+Class - 8
+    Recap -
+    screenshot method - in cucumber it accept array of byte
+    to get the unique screenshot name, we have implemented timestamp method
+    we used Scenario class of cucumber to get the details  of execution
+    to generate report - we use html plugin from runner class
+    reports always generate in target folder
+    we execute our code from pom.xml file, to achieve this we have used
+    maven surefire plugin
+
+    maven cucumber reporting plugin we use to get more detailed and colorful report
+
+Log files - when we execute our code, we need to sharpen our debugging skills
+          to have quick information about every step of execution, we need messages in the
+          form of report.
+          To get the details added by us, we need to create log files.
+          To create this log file, we use log4j concept
+
+maven lifecycle -
+        compile - source code converts into binary code
+        package - code will be packaged into jar files
+        install - jars will be installed to local repo .m2
+        deploy - here jars will go to remote repo
+        test - code will be tested in this lifecycle
+        clean - this will clean your target folder
+
+
+        when you run test -
+        this will execute compile - install - deploye - test
+
+Database Testing:
+
+1. Created database utility:
+    1. to get object of resulset
+        2. to get object of resultsetmetadata
+        3. to retrieve data from resultset and store in ListOfMaps
+
+    Now we can write test cases:
+    1. feature file
+    2. write steps in step definition
+
+    finally {
+
+                try {
+                    if (statement != null) {
+                        statement.close();
+                    }
+                    if (conn != null) {
+                        conn.close();
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
